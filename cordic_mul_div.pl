@@ -26,9 +26,7 @@ if( $mul_or_div =~ /^mul/ ) {
             $x = $x + 2**(-$i);
             $z = $z - $y*2**(-$i);
         }
-        #printf "\t%2d: %1.16f\n", $i, $z;
         printf "\t%1.16f\n", $z;
-        #printf "\t\t\tx = %1.16f, y = %1.16f\n", $x, $y;
     }
 
 } elsif( $mul_or_div =~ /^div/) {
@@ -55,9 +53,7 @@ if( $mul_or_div =~ /^mul/ ) {
                $z = $z + 2**(-$i);
             }
        }
-       #printf "\t%2d: %1.16f\n", $i, $z;
        printf "\t%1.16f\n", $z;
-       #printf "\t\t\tx = %1.16f, y = %1.16f\n", $x, $y;
     } 
 
 }

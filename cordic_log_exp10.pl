@@ -78,9 +78,7 @@ if( $log_or_exp =~ /^log/ ) {
            $x = $x + $x*2**(-$i); 
            $z = $z - $log_pos_values[$i-1]; 
         }
-        #printf "\t%2d: %1.16f\n", $i, $z;
-        printf "%1.16f\n", $z;
-        #printf "\t\t\tx = %1.16f\n", $x;
+        printf "\t%1.16f\n", $z;
     }
 
 } elsif( $log_or_exp =~ /^exp/) {
@@ -96,9 +94,7 @@ if( $log_or_exp =~ /^log/ ) {
             $x = $x - $log_neg_values[$i-1]; 
             $z = $z - $z*2**(-$i);
        } 
-       #printf "\t%2d: %1.16f\n", $i, $z;
        printf "%1.16f\n", $z;
-       #printf "\t\t\tx = %1.16f\n", $x;
     } 
 
 }
